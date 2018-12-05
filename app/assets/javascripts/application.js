@@ -16,3 +16,19 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+function getCities () {
+  $.ajax({
+    type: "GET",
+    url: "http://api.geonames.org/countryInfoJSON?lang=es&&username=kaushalparik27",
+    contentType: "application/json; charset=utf-8",
+    dataType: "jsonp",
+    success: function (data) {
+      alert("Success!")
+    },
+    error: function (data) {
+      alert("Fail!");
+    }
+  }); 
+};
