@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+# Font Awesome for Rails
+gem 'font-awesome-rails'
 # Gem for stock
 gem 'stock_quote'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
